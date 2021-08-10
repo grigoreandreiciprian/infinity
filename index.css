@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+header{
+    background-color: rgb(20, 20, 20);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:gray;
+}
+nav p{
+    margin:5%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.icons a{
+    color: rgb(48, 48, 194);
+    margin:5%;
+}
+
+
+
+
+.intro{
+    background-color: rgb(20, 20, 20);
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.continut{
+    margin-top: 10%;
+    height: 100vh;
+    background-image: url("aerobic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.continut .titlu{
+    padding: 10px;
+    background-color: black;
+    opacity: .8;
+}
+
+.continut button{
+    margin-top: 8%;
+    border-radius: 200px;
+    padding: 5px;
+    background-color:darkred;
+    color: white;
+}
+
+main{
+    background-color: #eee;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    margin:auto;
+    text-align: center;
+    padding-bottom: 20px;
+    /* margin-top: 10%; */
+}
+.image{
+    display: none;
+}
+
+main h1{
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+main h2{
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 10%;
+}
+
+.card{
+    margin-bottom: 10%;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 5%;
+}
+.cards{
+    font-size: 30px;
+}
+
+.box{
+    background-image: url("crystal.jpg");
+}
+
+.box h4{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.box p{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+@media(min-width:720px) and (max-width:900px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .image{
+        display: none;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:20px;
+        font-size:28px
+    }
+    .box{
+        margin-top: 5%;
+    }
+}
+
+@media (min-width:900px)and (max-width:1120px){
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .intro h1{
+        margin-top: 5%;
+        font-size: 50px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:20px;
+        font-size:20px
+    }
+    .box{
+        margin-top: 5%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "titles titles" 
+        "image cards"
+        "image cards" 
+        "box box";
+        font-size: 30px;
+    }
+
+    .image{
+        grid-area: image;
+        display: inline;
+    }
+    .cards{
+        grid-area:cards
+    }
+    .titles{
+        grid-area:titles;
+    }
+    .box{
+        grid-area: box;
+    }
+    .box{
+        width: 100%;
+        margin:auto;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1121px){
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .intro h1{
+        margin-top: 5%;
+        font-size: 50px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:20px;
+        font-size:20px
+    }
+    .box{
+        margin-top: 5%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "titles titles" 
+        "image cards"
+        "image cards" 
+        "box box";
+        font-size: 30px;
+    }
+
+    .image{
+        grid-area: image;
+    }
+    .cards{
+        grid-area:cards
+    }
+    .titles{
+        grid-area:titles;
+    }
+    .box{
+        grid-area: box;
+    }
+    .box{
+        width: 100%;
+        margin:auto;
+    }
+    .image{
+        display: inline;
+    }
+
+    .cards{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-wrap: wrap;
+    }
+}
