@@ -48,6 +48,7 @@ nav p{
     justify-content: center;
     align-items: center;
     color: white;
+    padding-bottom: 30px;
 }
 
 .continut{
@@ -56,16 +57,19 @@ nav p{
     background-image: url("aerobic.jpg");
     background-repeat: no-repeat;
     background-size:100%;
+    background-position: center right;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    position: relative;
-    border: 2px solid red;
+    /* position: relative; */
+    /* border: 2px solid red; */
     overflow: hidden;
+    display: none;
 }
+
 
 .continut .titlu{
     padding: 10px;
@@ -74,16 +78,15 @@ nav p{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .continut button{
-    margin-top: 15%;
+    margin-top: 10%;
     border-radius: 200px;
     padding: 5px;
     background-color:darkred;
     color: white;
-    position: absolute;
 }
 
 
@@ -146,7 +149,227 @@ main h2{
 }
 
 
+
+.coaching{
+    background-color: #363636;
+    text-align: center;
+    color: white;
+}
+
+.coaching h1{
+    font-size: 30px;
+    margin-bottom: 4%;
+    padding-top: 30px;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.coaching p{
+    font-size: 20px;
+    color: rgb(148, 147, 147);
+    margin:auto;
+    margin-bottom: 4%;
+    display: block;
+    width: 90%;
+}
+
+.coach h3{
+    margin-top:5%;
+}
+
+
+.coach img{
+    width: 85%;
+    margin-top: 4%;
+}
+figure{
+    position: relative;
+    overflow: hidden;
+}
+
+ .social{
+     position: absolute;
+     top: 90%;
+     left: 80%;
+     width: 5%;
+     height: 5%;
+     color: white;
+     /* display: none; */
+ }
+ .social i{
+     background-color: #131212;
+     padding: 5px;
+ }
+
+ .social2{
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     top:80%;
+     left: 80%;
+     width: 5%;
+     height: 5%;
+     color: white;
+     /* background-color: black; */
+     transition: opacity .1s;
+     transition: transform .4s;
+     /* transform: translateY(-45px); */
+     opacity: 0;
+ }
+ .social2 i{
+     background-color: black;
+     padding: 5px 14px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+ .social2:hover{
+     transform: translateY(-45.5px);
+     opacity: 1;
+ }
+
+ .social2 i:hover{
+    color: blueviolet;
+}
+.social2 a{
+    color: white;
+    text-decoration: none;
+}
+
+ 
+
+
+ footer{
+     text-align: center;
+     background-color: black;
+     color: white;
+     padding: 10px 0;
+ }
+
+ 
+@media (min-width:430px) and (max-width:572px){
+
+    .social{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* display: none; */
+    }
+    .social i{
+        background-color: #131212;
+        padding: 9px;
+    }
+
+    figure img{
+        max-width: 450px;
+    }
+
+    .social2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:80%;
+        left: 80%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* background-color: black; */
+        transition: opacity .1s;
+        transition: transform .4s;
+        /* transform: translateY(-45px); */
+        opacity: 0;
+    }
+    .social2 i{
+        background-color: black;
+        padding: 5px 18px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social2:hover{
+        transform: translateY(-32px);
+        opacity: 1;
+    }
+    .social2 i:hover{
+        color: blueviolet;
+    }
+    .social2 a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+    @media (min-width:573px) and (max-width:719px){
+
+        .social{
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            width: 5%;
+            height: 5%;
+            color: white;
+            /* display: none; */
+        }
+        .social i{
+            background-color: #131212;
+            padding: 9.5px;
+        }
+    
+        figure img{
+            max-width: 520px;
+        }
+
+
+        .social2 i{
+            background-color: black;
+            padding: 5px 18px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .social2:hover{
+            transform: translateY(-22.5px);
+            opacity: 1;
+        }
+        .social2 i:hover{
+            color: blueviolet;
+        }
+        .social2 a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+
 @media(min-width:720px) and (max-width:900px){
+
+    .continut{
+        margin-top: 10%;
+        /* height: 100vh; */
+        background-image: url("aerobic.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center right;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 50px; */
+        /* position: relative; */
+        /* border: 2px solid red; */
+        overflow: hidden;
+        /* display: none; */
+    }
+    .intro{
+        padding: 0px;
+    }
 
     header{
         display: flex;
@@ -200,13 +423,99 @@ main h2{
     .box{
         margin-top: 5%;
     }
+
+    .coaches{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .coaches {
+        font-size: 20px;
+    }
+    .coaching{
+        padding-bottom: 30px;
+    }
+
+
+    .social{
+        position: absolute;
+        top: 85%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* display: none; */
+    }
+    .social i{
+        background-color: #131212;
+        padding: 8px;
+    }
+
+
+    .social2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:80%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* background-color: black; */
+        transition: opacity .1s;
+        transition: transform .4s;
+        /* transform: translateY(-45px); */
+        opacity: 0;
+    }
+    .social2 i{
+        background-color: black;
+        padding: 5px 17px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social2:hover{
+        transform: translateY(-74px);
+        opacity: 1;
+    }
+    .social2 i:hover{
+        color: blueviolet;
+    }
+    .social2 a{
+        color: white;
+        text-decoration: none;
+    }
 }
+
+
+
 
 @media (min-width:900px)and (max-width:1278px){
     header{
         display: flex;
         flex-direction: row;
         width: 100%;
+    }
+    .continut{
+        margin-top: 5%;
+        /* height: 100vh; */
+        background-image: url("aerobic.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: top right;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 50px; */
+        /* position: relative; */
+        /* border: 2px solid red; */
+        overflow: hidden;
+        /* display: none; */
+    }
+    .intro{
+        padding: 0px;
     }
 
     nav{
@@ -288,13 +597,99 @@ main h2{
         flex-wrap: wrap;
         font-size: 20px;
     }
+
+
+    
+    .coaches{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .coaches {
+        font-size: 20px;
+    }
+    .coaching{
+        padding-bottom: 30px;
+    }
+
+    .social{
+        position: absolute;
+        top: 85%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* display: none; */
+    }
+    .social i{
+        background-color: #131212;
+        padding: 10px;
+    }
+
+
+    .social2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:80%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* background-color: black; */
+        transition: opacity .1s;
+        transition: transform .4s;
+        /* transform: translateY(-45px); */
+        opacity: 0;
+    }
+    .social2 i{
+        background-color: black;
+        padding: 5px 19px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social2:hover{
+        transform: translateY(-67px);
+        opacity: 1;
+    }
+    .social2 i:hover{
+        color: blueviolet;
+    }
+    .social2 a{
+        color: white;
+        text-decoration: none;
+    }
 }
+
 
 @media (min-width:1278px){
     header{
         display: flex;
         flex-direction: row;
         width: 100%;
+    }
+
+    .continut{
+        margin-top: 5%;
+        /* height: 100vh; */
+        background-image: url("aerobic.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: top right;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 50px; */
+        /* position: relative; */
+        /* border: 2px solid red; */
+        overflow: hidden;
+        /* display: none; */
+    }
+    .intro{
+        padding: 0px;
     }
 
     nav{
@@ -399,12 +794,66 @@ main h2{
         width: 100%;
     }
 
-    /* .cards{
-    width: 100%;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
-    } */
+    
+    .coaches{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .coaches {
+        font-size: 20px;
+    }
+    .coaching{
+        padding-bottom: 30px;
+    }
+
+
+    .social{
+        position: absolute;
+        top: 85%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* display: none; */
+    }
+    .social i{
+        background-color: #131212;
+        padding: 10px;
+    }
+
+
+    .social2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:80%;
+        left: 75%;
+        width: 5%;
+        height: 5%;
+        color: white;
+        /* background-color: black; */
+        transition: opacity .3s;
+        transition: transform .4s;
+        /* transform: translateY(-45px); */
+        opacity: 0;
+    }
+    .social2 a{
+        color: white;
+        text-decoration: none;
+    }
+    .social2 i{
+        background-color: black;
+        padding: 5px 19px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social2 i:hover{
+        color: blueviolet;
+    }
+    .social2:hover{
+        transform: translateY(-62px);
+        opacity: 1;
+    }
 }
