@@ -55,28 +55,40 @@ nav p{
     height: 100vh;
     background-image: url("aerobic.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    position: relative;
+    border: 2px solid red;
+    overflow: hidden;
 }
 
 .continut .titlu{
     padding: 10px;
     background-color: black;
     opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 .continut button{
-    margin-top: 8%;
+    margin-top: 15%;
     border-radius: 200px;
     padding: 5px;
     background-color:darkred;
     color: white;
+    position: absolute;
 }
+
+
+
+
 
 main{
     background-color: #eee;
@@ -95,9 +107,12 @@ main{
     display: none;
 }
 
+.titles{
+    margin-top: 8%;
+}
 main h1{
     text-transform: uppercase;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 main h2{
@@ -113,11 +128,12 @@ main h2{
     margin-bottom: 5%;
 }
 .cards{
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .box{
     background-image: url("crystal.jpg");
+    width: 100%;
 }
 
 .box h4{
@@ -158,20 +174,35 @@ main h2{
     .image{
         display: none;
     }
-
+ .titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 200px 1fr;
         grid-gap:20px;
-        font-size:28px
+        font-size:20px;
+        grid-template-areas:
+        "titles titles"
+        "cards cards";
+    }
+    .titles{
+        grid-area: titles;
+    }
+    .cards{
+        grid-area: cards;
     }
     .box{
         margin-top: 5%;
     }
 }
 
-@media (min-width:900px)and (max-width:1120px){
+@media (min-width:900px)and (max-width:1278px){
     header{
         display: flex;
         flex-direction: row;
@@ -200,6 +231,9 @@ main h2{
         margin-top: 5%;
         font-size: 50px;
     }
+
+
+
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -214,13 +248,15 @@ main h2{
     main{
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr 100px;
         grid-template-areas:
-        "titles titles" 
+        "image titles" 
         "image cards"
         "image cards" 
         "box box";
         font-size: 30px;
+        padding-bottom: 0px;
+        background-color: white;
     }
 
     .image{
@@ -239,19 +275,22 @@ main h2{
     .box{
         width: 100%;
         margin:auto;
+        /* padding-bottom:20px; */
+        display: block;
+        
     }
 
     .cards{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
-@media (min-width:1121px){
+@media (min-width:1278px){
     header{
         display: flex;
         flex-direction: row;
@@ -283,20 +322,53 @@ main h2{
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap:20px;
-        font-size:20px
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap:10px;
+        font-size:20px;
+        grid-template-areas: "titles titles"
+        "card card"
+        "card card";
+        background-color: white;
+    }
+    
+    .card i{
+        margin-bottom:5%;
+    }
+    .card h3{
+        margin-bottom: 5%;
+    }
+
+
+    .titles{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        /* margin: 2%; */
+    }
+    .titles i{
+        margin: 1%;
+    }
+    .titles h2{
+        margin: 1%;
+    }
+    .titles h1{
+        margin: 1%;
     }
     .box{
         margin-top: 5%;
     }
 
     main{
+        margin: auto;
+        width: 90%;
+        background-color: white;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
         grid-template-areas:
-        "titles titles" 
+        "image cards" 
         "image cards"
         "image cards" 
         "box box";
@@ -323,11 +395,16 @@ main h2{
         display: inline;
     }
 
-    .cards{
+    .card{
+        width: 100%;
+    }
+
+    /* .cards{
+    width: 100%;
      display: flex;
      flex-direction: row;
-     justify-content: flex-start;
-     align-items: flex-start;
+     justify-content: center;
+     align-items: center;
      flex-wrap: wrap;
-    }
+    } */
 }
