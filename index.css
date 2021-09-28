@@ -236,7 +236,98 @@ figure{
     text-decoration: none;
 }
 
- 
+
+.bmi{
+   text-align: center;
+   background-color: #eee;
+   padding-top: 20px;
+}
+.bmi h1{
+    margin:5% 0 10% 0;
+    font-size: 40px;
+}
+
+.bmi p{
+    opacity: .5;
+    margin-bottom: 10%;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+input{
+    width: 90%;
+    max-width: 600px;
+    margin: 3% 5%;
+    padding: 10px;
+}
+input::placeholder{
+    font-size: 15px;
+    color: black;
+}
+
+
+select{
+    width: 90%;
+    max-width: 600px;
+    margin: 3% 5%;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+#form_btn{
+    padding: 15px;
+    width: 60%;
+    max-width: 300px;
+    margin: 3% 5%;
+    font-size: 14px;
+    color: white;
+    background-color: #262626;
+    text-transform: uppercase; 
+}
+
+
+.bmit{
+    width: 90%;
+    border-collapse: collapse;
+    margin:auto
+}
+
+td{
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+#first{
+    border-bottom: 1px solid gray;
+    border-right:1px solid gray ;
+}
+#last{
+    border-bottom: none;
+}
+
+#first2{
+    border-bottom:  none;
+    border-right: 1px solid gray;
+}
+
+
 
 
  footer{
@@ -485,6 +576,64 @@ figure{
         color: white;
         text-decoration: none;
     }
+
+    .bmi p{
+        margin-bottom: 2%;
+
+    }
+
+
+    .field{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    input{
+        max-width: none;
+        margin: 3% 2%;
+    }
+    
+    select{
+        max-width: none;
+        margin: 3% 2%;
+    }
+    
+    #form_btn{ 
+       margin: 3% 2%;
+    }
+    
+
+
+}
+
+@media (min-width:900px) and (max-width:1000px)
+{
+    .field{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    input{
+        max-width: none;
+        margin: 3% 2%;
+    }
+    
+    select{
+        max-width: none;
+        margin: 3% 2%;
+    }
+    
+    #form_btn{ 
+       margin: 3% 2%;
+    }
 }
 
 
@@ -659,6 +808,42 @@ figure{
     .social2 a{
         color: white;
         text-decoration: none;
+    }
+
+
+
+    .bmi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px
+    }
+
+
+    .field{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        border: none;
+    }
+    .field input{
+        width: 40%
+    }
+    .field select{
+        width: 40%;
+    }
+    #activity{
+        width: 100%
+    }
+
+    .tab_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -855,5 +1040,43 @@ figure{
     .social2:hover{
         transform: translateY(-62px);
         opacity: 1;
+    }
+
+
+
+    
+
+
+    .bmi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap:20px
+    }    
+
+    .field{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        border: none;
+    }
+    .field input{
+        width: 40%
+    }
+    .field select{
+        width: 40%;
+    }
+    #activity{
+        width: 100%
+    }
+
+    .tab_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -171,9 +171,86 @@
      </div>
    </section>
 
+
+   <section class="bmi">
+
+    <div class="form_box">
+     <h1>What is BMI</h1>
+     <p>Body Mass Index (BMI) is a person’s weight in kilograms divided by the square of height in meters. A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.</p>
+
+     <form action="index.html" method="POST">
+
+      <fieldset class="field">
+      <input type="text" id="height" name="user_height" placeholder="Height / cm">
+      <input type="text" id="weight" name="user_weight" placeholder="Weight / kg">
+      <input type="number" id="age"  name="user_age"  placeholder="Age">
+
+      <select id="gender" name="user_gender">
+        <option disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+
+      <select id="activity" name="user_activity">
+        <optgroup label="Select an activity factor">
+          <option disabled selected>Select an activity factor</option>
+          <option value="little">Little or no exercise/desk job</option>
+          <option value="light">Light exercie/sports 1-3 days/week</option>
+          <option value="moderate">Moderate exercise/sports 3-5 days/week</option>
+          <option value="heavy">Heavy exercise/sports 6-7 days/wekk</option>
+          <option value="very_heavy">Very heavy exercise/pshysical job/training 2x/day</option>
+        </optgroup>
+      </select>
+
+      <button type="submit" id="form_btn">Calculate</button>
+      </fieldset>
+     </form>
+     </div>
+
+     <div class="tab_box">
+     
+
+     <table class="bmit">
+       <thead>
+           <th scope="col">BMI</th>
+           <th scope="col">WEIGHT STATUS</th>
+       </thead>
+
+       <tfoot>
+         <td colspan="2"><span>BMR </span> Metabolic rate / <span>BMI</span> Body mass index</td>
+       </tfoot>
+
+
+       <tbody>
+         <tr>
+            <td id="first">Below 18.5</td>
+            <td>Underweight</td>
+         </tr>
+
+         <tr>
+           <td id="first">18.5-24.9</td>
+           <td>Healthy</td>
+         </tr>
+
+         <tr>
+           <td id="first">25.0-29.9</td>
+           <td>Overweight</td>
+         </tr>
+
+         <tr>
+           <td id="first2">30.0-and above</td>
+           <td id="last">Obese</td>
+         </tr>
+       </tbody>
+     </table>
+     </div>
+   </section>
+
    <footer>
      <p>Copyright @2021 Infinity Gym</p>
    </footer>
+
 
     
 </body>
