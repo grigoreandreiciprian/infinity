@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: #eee;
+}
+
+
+.logo{
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+}
+
+.logoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 25px;
+    color: white;
+}
+
+.logoText h1{
+    color: gold;
+    margin: 0px;
+}
+
+.logoText h2{
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+.logoImage{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImage img{
+    width: 100%;
+    max-width: 150px;
+}
+
+
+.title{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.title h1{
+    margin: 2% 0 2% 0;
+}
+
+.title p{
+
+    margin: 2% 0 2% 0;
+}
+
+form{
+    width: 100%;
+    padding-bottom:10px;
+}
+
+fieldset{
+    border: none;
+}
+
+.name{
+    width: 100%;
+}
+
+input::placeholder{
+    font-size: 1.2em;
+}
+
+.name input{
+    padding: 10px 20px;
+    width: 50%;
+    margin: 2%;
+}
+
+.nameInputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.radio{
+    margin: 2% 0 0 0;
+}
+
+
+.atributes{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 0;
+}
+
+.atributes input{
+    margin: 3% 0 3% 0;
+    width: 80%;
+    padding: 7px 20px;
+}
+
+
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 0;
+}
+
+
+.adress input{
+    margin: 3% 0 3% 0;
+    width: 80%;
+    padding: 7px 20px;
+}
+
+#submit{
+    display: block;
+    margin: 5% auto;
+    padding: 10px;
+    font-size: 1em;
+    width: 30%;
+    background-color: #262626;
+    color: white;
+}
+
+
+
+@media (min-width:800px){
+
+    body{
+        width: 50%;
+        margin: auto;
+        background-color: #eee;
+    }
+
+    html{
+        background-color: white;
+    }
+
+    form{
+        background-color: #eee;
+    }
+
+    .title{
+        background-color: #eee;
+    }
+}
